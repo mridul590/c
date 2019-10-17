@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<conio.h>
 #include <stdlib.h>
 struct llnode {
     int data;
@@ -127,6 +128,7 @@ void noOfNodes() {
 
 void main() {
     int c;
+    clrscr();
     while (1) {
         printf("\nSELECT AN OPTION\n1.COPY\t2.CONCATENATE\t3.SPLIT\t4.REVERSE\t5.NO OF NODES\t6.Exit\n");
         scanf("%d", &c);
@@ -150,4 +152,5 @@ void main() {
             exit(0);
         }
     }
+    getch();
 }
